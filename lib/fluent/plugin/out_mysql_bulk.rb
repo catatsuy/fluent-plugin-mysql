@@ -1,4 +1,5 @@
 require 'fluent/plugin/output'
+require 'oj'
 
 module Fluent::Plugin
   class MysqlBulkOutput < Output
