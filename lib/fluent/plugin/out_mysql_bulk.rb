@@ -165,7 +165,7 @@ DESC
             end
 
             if @json_key_names && @json_key_names.include?(key)
-              value = value.to_json
+              value = Oj.dump(value)
             end
 
             if @unixtimestamp_key_names && @unixtimestamp_key_names.include?(key)
